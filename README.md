@@ -24,7 +24,7 @@ Contextual targetting analyzes data by understanding its context, whether in tex
   ```bash
    pip install -r requirements.txt 
   ```
-  -**Run the Application**:
+- **Run the Application**:
   ```bash
   python main/app.py
   ```
