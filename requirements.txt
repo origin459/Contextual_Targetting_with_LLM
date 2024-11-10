@@ -1,0 +1,6 @@
+ollama                     # Ollama Python client
+Flask==2.3.2               # Flask backend
+torch==2.0.1               # PyTorch, for models like LLava 7B
+transformers==4.30.0       # Hugging Face Transformers for model handling
+Pillow==9.5.0              # Image processing (used by LLava or if you handle images)
+requests==2.31.0           # For making HTTP requests, if needed in your project
