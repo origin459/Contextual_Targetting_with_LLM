@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Input Type</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 20px;
+            width: 80%;
+            max-width: 1200px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-item {
+            background-color: #eceff1;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .grid-item:hover {
+            background-color: #cfd8dc;
+        }
+
+        .grid-item i {
+            font-size: 50px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .grid-item p {
+            margin: 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .grid-item a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .grid-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Select Your Input Type</h1>
+    <div class="grid-container">
+        <div class="grid-item">
+            <a href="{{ url_for('upload_image') }}">
+                <i class="fas fa-image"></i>
+                <p>Images</p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="{{ url_for('upload_video') }}">
+                <i class="fas fa-video"></i>
+                <p>Video</p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="{{ url_for('upload_text') }}">
+                <i class="fas fa-file-alt"></i>
+                <p>Text</p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="{{ url_for('upload_url') }}">
+                <i class="fas fa-link"></i>
+                <p>URL</p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="{{ url_for('upload_pdf') }}">
+                <i class="fas fa-file-pdf"></i>
+                <p>PDF</p>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
