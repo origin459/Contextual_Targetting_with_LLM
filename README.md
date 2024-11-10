@@ -1,6 +1,6 @@
 # Contextual Targetting with LLM
 
-This project demonstrates contextual targeting using large language models (LLMs) to analyze both text and image data. The application features a frontend interface where users can select the data type (text or image) and upload files for analysis. Using Google's **Gemma model** for text data and the **LLava 7B model** for image data, the project provides a RESTful API with a Flask backend. The models are prompt-engineered for optimal performance, and can be further customized in the `text.py` and `image.py` files.
+This project allows users to analyze data by processing text and image inputs using the **Gemma** model for text-based data and the **Llava 7B** model for image-based data. The backend is built using **Flask**, and a user-friendly interface is provided for easy interaction.
 
 ## Overview
 
@@ -11,7 +11,6 @@ Contextual targetting analyzes data by understanding its context, whether in tex
 - **Frontend Interface**: Users can select the data type (text or image) and upload files for analysis.
 - **Text Analysis**: Sentiment analysis, emotion detection, and categorization using the Gemma model.
 - **Image Analysis**: Contextual insights from images using the LLava 7B model.
-- **API Integration**: RESTful API with Flask to interact with the models.
 - **Customizable Models**: Models are prompt-engineered and can be customized within `text.py` and `image.py`.
 
 ## Setup
